@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    kotlin("kapt")
     alias(libs.plugins.hilt.android)
 }
 
@@ -67,7 +68,7 @@ dependencies {
     // Navigation
     implementation(libs.androidx.navigation.compose)
 
-    // Media3 (已修正为点号，不会再报错)
+    // Media3
     implementation(libs.media3.session)
     implementation(libs.media3.exoplayer)
 }
